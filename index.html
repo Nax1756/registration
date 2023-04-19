@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>registration in the ass</title>
+   <link rel="stylesheet" href="/site/css/style.css">
+</head>
+<body>
+   <section class="promo__section" id="promoSection" name="promo">
+      <div  class="promo__content">
+         <h1 class="promo__first-title">To continue Register or </h1>
+         <h1 class="promo__second-title">log in to your account</h1>
+         <div class="promo__subtitle">If you do not have an account, please register</div>
+         <div class="promo__buttons">
+            <button class="promo__login-button login" id="login" type="submit">Log in</button>
+            <button class="promo__signin-button signin" id="signIn" type="submit">Sign in</button>
+         </div>
+      </div>
+   </section>
+   <!-- login -->
+   <section class="login__section" id="loginSection">
+      <button class="button__login-promo" id="loginBack" type="submit"></button>
+      <div class="login__block">
+         <form action="/site/php/login.php" class="content ">
+            <div class="title">Login</div>
+            <div class="group">
+               <input class="input" id="loginLogin" placeholder=" ">
+               <label class="label">Login</label>
+            </div>
+            <div class="group">
+               <input class="input" id="loginPass" placeholder=" ">
+               <label class="label">Password</label>
+            </div>
+            <button class="login" id="login__button">Log in</button>
+         </form>
+      </div>      
+   </section>
+   <!-- signin -->
+   <section class="signin__section" id="signInSection">
+      <button class="button__signin-promo" id="signInBack" ></button>
+      <div class="signin__block">
+         <form action="/site/php/signin.php" method="POST" class="content ">
+            <div class="title">Register</div>
+            <div class="group">
+               <input class="input" id="signInLogin" name="signInLogin"  placeholder=" ">
+               <label class="label">Login</label>
+            </div>
+            <div class="group">
+               <input class="input" id="signInName" name="signInName" placeholder=" ">
+               <label class="label">Name</label>
+            </div>
+            <div class="group">
+               <input class="input" id="signInPass" name="signInPass" placeholder=" ">
+               <label class="label">Password</label>
+            </div>
+            <button class="signin" id="login__button">Sign In</button>
+         </form>
+      </div>      
+   </section>
+   <script src="/site/js/script.js"></script>
+</body>
+</html>

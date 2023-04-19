@@ -1,0 +1,195 @@
+@import "nullstyle";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,regular,600,900);
+
+body{
+   font-family: Montserrat;
+   background: #282828;
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.login{
+   font-family: Montserrat;
+   width: 100px;
+   height: 28px;
+   background: rgba(115, 255, 138, 1);
+   border-radius: 3px;
+   font-weight: 600;
+   font-size: 10px;
+   line-height: 12px;
+   color: #000;
+   &:hover{
+      color: #fff;
+   }
+}
+
+.signin{
+   font-family: Montserrat;
+   width: 100px;
+   height: 28px;
+   background: rgba(0, 56, 255, 1);
+   border-radius: 3px;
+   font-weight: 600;
+   font-size: 10px;
+   line-height: 12px;
+   color: #000;
+   &:hover{
+      color: #fff;
+   }
+}
+
+.promo__section{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+   
+.promo__content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   .promo__first-title{
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 121%;
+   }
+   .promo__second-title{
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 121%;
+   }
+   .promo__subtitle{
+      font-weight: 300;
+      font-size: 16px;
+      margin: 7px 0 0 0;
+      line-height: 125%;
+   }
+   .promo__buttons{
+      margin: 27px 15px 0 0;
+      .promo__login-button{
+         margin: 0 15px 0 0;
+      }
+      
+      .promo__signin-button{
+         margin: 0 0 0 15px ;
+      }
+      
+   }
+}
+
+/*---login------------------------------------------------------------------------*/
+.login__section{
+   width: 100%;
+   height: 100vh;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   .button__login-promo{
+      width: 41px;
+      position: absolute;
+      margin: -366px 328px 0px 0px;
+      height: 29px;
+      background: url(/site/img/backButton.png) no-repeat;
+   }
+   
+}
+
+.login__block{
+   width: 380px;
+   height: 322px;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 0 20px rgba(0, 255, 41, 1);    
+   border-radius: 10px;
+}
+
+.content{
+   width: 200px;
+   .title{
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 44px;
+      color: #282828;    
+      margin: 40px 0 0 0;
+      text-align: center;
+   }
+   .group{
+      position: relative;
+      margin: 40px 0 0 0;
+      width: 100%;
+      .input{
+         border: none;
+         border-bottom: solid 1px #aaa;
+         font-family: Montserrat;
+         width: 100%;
+         padding: 0 0 0.2px 0;
+         outline: none;
+         transition: 0.3s;
+         background: transparent;
+         z-index: 11;
+         position: relative;
+
+         &:focus ~ .label,
+         &:not(:placeholder-shown) ~ .label{
+            top: -10px;
+            font-size: 9px;
+            font-weight: 300;
+         }
+      }
+      .label{
+         position: absolute;
+         font-weight: 400;
+         font-size: 11px;
+         color: #AAAAAA;
+         top: 3px;
+         left: 0;
+         transition: 0.3s;
+      }
+   }
+   .login{
+      margin: 20px 0 0 0;
+   }
+}
+
+
+
+
+
+/*---signIn------------------------------------------------------------------------*/
+.signin__section{
+   width: 100%;
+   height: 100vh;
+   display: none;
+   align-items: center;
+   justify-content: center;
+   .button__signin-promo{
+      width: 50px;
+      position: absolute;
+      margin: -408px 328px 0px 0px;
+      height: 30px;
+      background: url(/site/img/BlueBackButton.png) no-repeat;
+   }
+   
+}
+
+.signin__block{
+   width: 380px;
+   height: 366px;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 0 0 20px rgba(0, 56, 255, 1);  
+   border-radius: 10px;
+   .content{
+      .signin{
+         margin: 20px 0 0 0;
+      }
+   }
+}
